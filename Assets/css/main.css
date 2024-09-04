@@ -5,6 +5,7 @@
     position: sticky;
     top: 0px;
     left: 0px;
+    z-index: 999;
 }
 
 .logo{
@@ -161,6 +162,7 @@ scale: 1.05;
 
 .section2{
     background-color: var(--cutwhite);
+    overflow: hidden;
     padding: 150px 0px;
  }
  .section2 .text{
@@ -348,6 +350,225 @@ scale: 1.05;
 
  }
  
+
+
+/* section 4 start*/
+.section4{
+    background-color: #fff;
+    padding: 60px 0px;
+}
+.section4 .row{
+    align-items: start;
+    gap: 100px;
+}
+.course-cards{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.course-item{
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 25px) / 2);
+    gap: 15px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.course-item img{
+    width: 100%;
+}
+.course-image{
+    position: relative;
+}
+.course-image .course-info{
+    position:absolute ;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: -6px;
+    left: -1px;
+    height: 100%;
+    color: #fff;
+    font-family: var(--poppins);
+    padding: 15px 0px;
+    background-image: linear-gradient(to top,rgba(0,0,0,0.8),transparent,transparent);
+}
+.course-info .price{
+    width: 100px;
+    
+    text-align: center;
+    align-self: flex-end;
+    font-weight: 600;
+}
+.course-info .tag{
+    background-color: var(--mainColor);
+    height: fit-content;
+    padding: 8px;
+    font-weight: 600;
+}
+.course-details{
+    font-family: var(--poppins);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.course-details .title-views{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+.course-details .title-views h3{
+    font-size: 20px;
+}
+.course-details .title-views p{
+    color: var(--mainColor);
+    font-size: 12px;
+}
+.course-details .videos{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 15px;
+    color: #969696;
+}
+.section4 .text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.section4 .text span{
+    color: var(--mainColor);
+    font-family: var(--inter);
+    flex-grow: 1;
+}
+.section4 .text h2{
+    font-size: 60px;
+    font-family: var(--poppins);
+}
+.section4 .text p{
+    font-family: var(--poppins);
+    color: #969696;
+}
+.section4 .text a{
+    width: 150px;
+}
+
+@media screen and (max-width: 1215px) {
+    .section4 .row{
+        flex-direction: column;
+    }
+    .section4 .row .text{
+        order: -1;
+    }
+    .section4 .course-cards{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 620px){
+    .course-item{
+        width: 100%;
+    }
+}
+/* section 4 end*/
+
+
+
+
+
+ .section5{
+    background-color: #fff;
+ }
+ .testomonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    padding: 50px 0px;
+ }
+ .testomonial h2{
+    font-family: var(--poppins);
+    font-size: 30px;
+ }
+
+ .testomonial .test-cards{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    
+ }
+ .test-cards .test-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 45px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.4)  ;
+    transition: 400ms;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+ }
+ .test-cards .test-card:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4) ;
+ }
+ 
+ .test-cards .test-card .info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ }
+ .test-card .info img{
+    width: 50px;
+    border-radius:50% ;
+ }
+ .personal-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: var(--poppins);
+ }
+ .personal-info p{
+    color: #969696;
+ }
+ .test-card .rate{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+ .test-card p{
+    font-family: var(--poppins);
+ }
+ .test-card .corner{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #F4F4F4;
+    top: -50px;
+    right: -50px;
+    transform: rotate(45deg);
+ }
+
+ @media screen and (max-width: 560px) {
+    .test-cards{
+        flex-direction: column;
+    }
+    .test-card{
+        width: 100%;
+    }
+    
+ }
+
+
+
+
+
 .footer{
     background-color: #393E46;
     color: var(--cutwhite);
@@ -442,3 +663,4 @@ font-weight: 700;
         width: 100%;
     }
  }
+ 
